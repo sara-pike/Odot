@@ -1,4 +1,5 @@
 class TodoListsController < ApplicationController
+
   before_action :set_todo_list, only: [:show, :edit, :update, :destroy]
 
   # GET /todo_lists
@@ -7,9 +8,10 @@ class TodoListsController < ApplicationController
     @todo_lists = TodoList.all
   end
 
-  # GET /todo_lists/1
+  # GET /todo_lists/:id
   # GET /todo_lists/1.json
   def show
+
   end
 
   # GET /todo_lists/new
@@ -19,6 +21,7 @@ class TodoListsController < ApplicationController
 
   # GET /todo_lists/1/edit
   def edit
+
   end
 
   # POST /todo_lists
